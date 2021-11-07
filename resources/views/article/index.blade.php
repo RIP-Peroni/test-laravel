@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@if (Session::has('statusCreated'))
+    {{ Session::get('statusCreated') }}
+@endif
+
 @section('content')
     <h1>Список статей</h1>
 
